@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-30T19:11:31 IST" name="All Test Suite" finished-at="2023-07-30T19:11:32 IST" duration-ms="1396">
+    <groups>
+    </groups>
+    <test started-at="2023-07-30T19:11:31 IST" name="ninja-apiautomation" finished-at="2023-07-30T19:11:32 IST" duration-ms="1396">
+      <class name="com.turtlemint.ninja.UserRoleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.turtlemint.ninja.UserRoleTest@a4102b8]" started-at="2023-07-30T19:11:31 IST" name="setup" finished-at="2023-07-30T19:11:31 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test()[pri:0, instance:com.turtlemint.ninja.UserRoleTest@a4102b8]" started-at="2023-07-30T19:11:31 IST" name="test" finished-at="2023-07-30T19:11:32 IST" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="getDpDetails()[pri:0, instance:com.turtlemint.ninja.UserRoleTest@a4102b8]" started-at="2023-07-30T19:11:31 IST" name="getDpDetails" finished-at="2023-07-30T19:11:31 IST" duration-ms="159" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Base URI cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Base URI cannot be null
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.baseUri(RequestSpecificationImpl.groovy:704)
+at io.restassured.builder.RequestSpecBuilder.setBaseUri(RequestSpecBuilder.java:1112)
+at com.turtlemint.ninja.common.RequestBuilder.setRequestDetails(RequestBuilder.java:36)
+at com.turtlemint.ninja.common.CommonFunctions.getResponseWithQueryParam(CommonFunctions.java:21)
+at com.turtlemint.ninja.UserRoleTest.getDpDetails(UserRoleTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDpDetails -->
+        <test-method signature="updateRole()[pri:0, instance:com.turtlemint.ninja.UserRoleTest@a4102b8]" started-at="2023-07-30T19:11:31 IST" name="updateRole" finished-at="2023-07-30T19:11:31 IST" duration-ms="159" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Base URI cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Base URI cannot be null
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.baseUri(RequestSpecificationImpl.groovy:704)
+at io.restassured.builder.RequestSpecBuilder.setBaseUri(RequestSpecBuilder.java:1112)
+at com.turtlemint.ninja.common.RequestBuilder.setRequestDetails(RequestBuilder.java:36)
+at com.turtlemint.ninja.common.CommonFunctions.postRequest(CommonFunctions.java:28)
+at com.turtlemint.ninja.UserRoleTest.updateRole(UserRoleTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateRole -->
+      </class> <!-- com.turtlemint.ninja.UserRoleTest -->
+    </test> <!-- ninja-apiautomation -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

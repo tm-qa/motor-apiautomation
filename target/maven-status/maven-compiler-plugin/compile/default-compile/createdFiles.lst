@@ -1,0 +1,8 @@
+com/turtlemint/ninja/configurations/PropertyHandler.class
+com/turtlemint/ninja/common/RequestBuilder$1.class
+com/turtlemint/ninja/common/CommonFunctions.class
+com/turtlemint/ninja/pojo/UsersDetails$UsersDetailsBuilder.class
+com/turtlemint/ninja/configurations/MongoDbConfig.class
+com/turtlemint/ninja/common/RequestBuilder.class
+com/turtlemint/ninja/pojo/UsersDetails.class
+com/turtlemint/ninja/configurations/Services.class

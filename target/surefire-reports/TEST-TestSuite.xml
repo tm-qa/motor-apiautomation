@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.777" tests="3" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sayali/Documents/GitRepo/motor-apiautomation/target/test-classes:/Users/sayali/Documents/GitRepo/motor-apiautomation/target/classes:/Users/sayali/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/sayali/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/sayali/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/sayali/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/sayali/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/sayali/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/sayali/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/sayali/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/sayali/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/sayali/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/sayali/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/sayali/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/sayali/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/sayali/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/sayali/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/sayali/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/sayali/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/sayali/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/sayali/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/sayali/.m2/repository/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sayali/Documents/GitRepo/motor-apiautomation/target/surefire/surefirebooter-20230730191130859_3.jar /Users/sayali/Documents/GitRepo/motor-apiautomation/target/surefire 2023-07-30T19-11-29_941-jvmRun1 surefire-20230730191130859_1tmp surefire_0-20230730191130859_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/sayali/Documents/GitRepo/motor-apiautomation/target/test-classes:/Users/sayali/Documents/GitRepo/motor-apiautomation/target/classes:/Users/sayali/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/sayali/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/sayali/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/sayali/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/sayali/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/sayali/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/sayali/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/sayali/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/sayali/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/sayali/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/sayali/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/sayali/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/sayali/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/sayali/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/sayali/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/sayali/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/sayali/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/sayali/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/sayali/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/sayali/.m2/repository/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sayali"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sayali/Documents/GitRepo/motor-apiautomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/sayali/Documents/GitRepo/motor-apiautomation/target/surefire/surefirebooter-20230730191130859_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="20.0.1"/>
+    <property name="user.name" value="sayali"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.5.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/sayali/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/sw/k66l878s21n6szpyst824cy40000gn/T/"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="/Users/sayali/Documents/GitRepo/motor-apiautomation"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sayali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="20.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="getDpDetails" classname="com.turtlemint.ninja.UserRoleTest" time="0.162">
+    <failure message="Base URI cannot be null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Base URI cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.baseUri(RequestSpecificationImpl.groovy:704)
+	at io.restassured.builder.RequestSpecBuilder.setBaseUri(RequestSpecBuilder.java:1112)
+	at com.turtlemint.ninja.common.RequestBuilder.setRequestDetails(RequestBuilder.java:36)
+	at com.turtlemint.ninja.common.CommonFunctions.getResponseWithQueryParam(CommonFunctions.java:21)
+	at com.turtlemint.ninja.UserRoleTest.getDpDetails(UserRoleTest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="updateRole" classname="com.turtlemint.ninja.UserRoleTest" time="0.165">
+    <failure message="Base URI cannot be null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Base URI cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.baseUri(RequestSpecificationImpl.groovy:704)
+	at io.restassured.builder.RequestSpecBuilder.setBaseUri(RequestSpecBuilder.java:1112)
+	at com.turtlemint.ninja.common.RequestBuilder.setRequestDetails(RequestBuilder.java:36)
+	at com.turtlemint.ninja.common.CommonFunctions.postRequest(CommonFunctions.java:28)
+	at com.turtlemint.ninja.UserRoleTest.updateRole(UserRoleTest.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+  </testcase>
+  <testcase name="test" classname="com.turtlemint.ninja.UserRoleTest" time="0.949">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://pro.turtlemint.com/api/masters/v1/getnewmakemodel?searchKey=kia&vertical=FW
+Proxy:			<none>
+Request params:	<none>
+Query params:	searchKey=kia
+				vertical=FW
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "make": "KIA",
+        "model": "SELTOS",
+        "makemodel": "KIA SELTOS",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "SONET",
+        "makemodel": "KIA SONET",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "Carnival",
+        "makemodel": "KIA Carnival",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "Sorento",
+        "makemodel": "KIA Sorento",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "Sportage",
+        "makemodel": "KIA Sportage",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "EV6",
+        "makemodel": "KIA EV6",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "Niro",
+        "makemodel": "KIA Niro",
+        "matchScore": 0.0
+    },
+    {
+        "make": "KIA",
+        "model": "Carens",
+        "makemodel": "KIA Carens",
+        "matchScore": 0.0
+    }
+]
+]]></system-out>
+  </testcase>
+</testsuite>
