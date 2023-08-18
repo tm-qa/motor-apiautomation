@@ -37,10 +37,10 @@ public class CommonFunctions {
         requestBuilder.response.prettyPrint();
     }
 
-    public <T> void postRequest(Services service, String endPoint, T clazz , BasePaths basePath){
+    public <T> void postRequest(Services service, String endPoint, T body , BasePaths basePath){
         requestBuilder.setRequestDetails(service,basePath);
-        requestBuilder.setRequestBody(clazz);
-        requestBuilder.execute(Method.GET,endPoint);
+        requestBuilder.setRequestBody(body);
+        requestBuilder.execute(Method.POST,endPoint);
         requestBuilder.response.prettyPrint();
     }
 

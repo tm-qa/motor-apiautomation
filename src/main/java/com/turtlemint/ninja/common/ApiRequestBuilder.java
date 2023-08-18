@@ -72,7 +72,7 @@ public class ApiRequestBuilder {
      *
      * */
     public void setQueryParams(Map<String,String> queryParams){
-         requestSpecification.queryParams(queryParams);
+        Optional.ofNullable(queryParams).ifPresent(parms->  requestSpecification.queryParams(parms));
     }
 
     public void setPathParam(String pathParam){
@@ -81,7 +81,7 @@ public class ApiRequestBuilder {
 
     public void setRequestBody(Object clazz){
         if(Objects.nonNull(clazz)){
-            requestSpecification.body(clazz.toString());
+            requestSpecification.body(clazz);
         }
     }
 

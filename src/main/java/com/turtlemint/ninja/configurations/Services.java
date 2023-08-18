@@ -5,7 +5,8 @@ public enum Services {
     MINTPRO("mintPro"),
     AGENTPRO("agentPro"),
     NINJA("ninja"),
-    TANGLED("tangeled");
+    TANGLED("tangeled"),
+    MINTPRO_MASTER("mintproMaster");
 
     private final String serviceName;
 

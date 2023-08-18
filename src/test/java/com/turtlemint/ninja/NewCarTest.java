@@ -4,6 +4,8 @@ import com.turtlemint.ninja.common.ApiRequestBuilder;
 import com.turtlemint.ninja.common.CommonFunctions;
 import com.turtlemint.ninja.configurations.BasePaths;
 import com.turtlemint.ninja.configurations.Services;
+import com.turtlemint.ninja.pojo.CreateLeadDetails;
+import com.turtlemint.ninja.pojo.MotorPremiumRequest;
 import com.turtlemint.ninja.pojo.VariantDetails;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -57,25 +59,58 @@ public class NewCarTest {
         queryParams.put("model","SELTOS");
         queryParams.put("type","FW");
         commonFunctions.getResponseWithQueryParam(Services.MINTPRO, BasePaths.MINTPRO_MASTERS,"getVariant",queryParams);
-//        System.out.println(requestBuilder.response.getStatusCode());
-//        if(requestBuilder.response.jsonPath().getList("").size()>0){
-//            VariantDetails[] variantDetailsList = requestBuilder.response.as(VariantDetails[].class);
-//
-//            Arrays.stream(variantDetailsList).parallel().forEach(variant -> System.out.println(variant.getDisplayVariant()));
-//
-//            variantDetails = variantDetailsList[new Random().nextInt(variantDetailsList.length)];
-//
-//            System.out.println("Random Variant Object: ");
-//            System.out.println(variantDetails.getModel());
-//            System.out.println(variantDetails.getMake());
-//            System.out.println(variantDetails.getCc());
-//            System.out.println(variantDetails.getFuel());
-//            System.out.println(variantDetails.get_id());
-//            System.out.println(variantDetails.getDisplayVariant());
-//        }else {
-//            System.out.println("response is empty");
-//        }
         Assert.assertEquals(200,requestBuilder.response.getStatusCode());
     }
+
+    @Test
+    public void verifyCheckout(){
+
+        commonFunctions.getResponseWithQueryParam(Services.MINTPRO, BasePaths.MINTPRO_CHECKOUT,"requestID",null);
+        Assert.assertEquals(200,requestBuilder.response.getStatusCode());
+    }
+
+    @Test
+    public void verifyPartnerDetails(){
+
+        commonFunctions.getResponseWithQueryParam(Services.MINTPRO_APP, BasePaths.MINTPRO_PARTNER,"partnerId",null);
+        Assert.assertEquals(200,requestBuilder.response.getStatusCode());
+    }
+
+    @Test
+    public void getInsurerDetails(){
+        Map<String, String> queryParams= new HashMap<>();
+        queryParams.put("policyType","comprehensive");
+        queryParams.put("tenant","turtlemint");
+        queryParams.put("type","FW");
+        commonFunctions.getResponseWithQueryParam(Services.MINTPRO_MASTER, BasePaths.MINTPRO_MASTERS_MOTOR,"insurerdetail",queryParams);
+        Assert.assertEquals(200,requestBuilder.response.getStatusCode());
+    }
+
+    @Test
+    public void verifyCreateLead(){
+        MotorPremiumRequest motorPremiumRequest= MotorPremiumRequest.builder()
+                .requestId("MH1OXA88K0V")
+                .vehicleId("7957")
+                .rtoId("MH01")
+                .rtoDesp("Mumbai Central- Location- Tardeo")
+                .year(2023)
+                .make("Hyundai")
+                .model("i20")
+                .fuel("Petrol")
+                .variant("Asta AT (1396 CC)").build();
+
+        CreateLeadDetails createLeadDetails = CreateLeadDetails.builder()
+                ._id("MH1OXA88K0V")
+                .isAsync(true)
+                .vertical("FW")
+                .stateCode("MH")
+                .policyType("comprehensive")
+                .motorPremiumRequest(motorPremiumRequest)
+                .build();
+        commonFunctions.postRequest(Services.MINTPRO,"request", createLeadDetails,BasePaths.MINTPRO_PLATFORM_V0);
+
+    }
+
+
 
 }
